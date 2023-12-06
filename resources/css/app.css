@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+/* Стили для показа праоля */
+
+.password {
+    position: relative;
+}
+.password-control {
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../no-view.svg) 0 0 no-repeat;
+    z-index: 10;
+}
+.password-control.view {
+    background: url(../../view.svg) 0 0 no-repeat;
+}
